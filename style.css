@@ -1,0 +1,29 @@
+body { 
+  font-family: sans-serif; 
+  background-color:aqua;
+  background-image: url(http://farm5.static.flickr.com/4094/4768197526_ffe9d19a43.jpg);
+  width:400px;
+}
+
+.name, .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #009;
+}
+
+.error {
+  font-weight: bold;
+  color: #C00;
+}
+
+#results {
+  border: medium solid #390;
+  display: none;
+  padding-left: 10px;
+  width: 300px;
+}
+#van {overflow:hidden;height:0%;}
+.nav {float:left;border:2px dotted yellow;margin:0;padding:0;}
+.nav li {float:left;margin:0 5px 0 0;padding:0;list-style:none;}
+
+#debug {background:black;color:lime;}
