@@ -26,21 +26,22 @@ if ($did > 0) {
     // Retrieve the results:
     while ($row = mysql_fetch_array($r, MYSQL_ASSOC)) {
     
-      echo "<p><span class=\"name\">{$row['last_name']}, {$row['first_name']}</span><br />
-      <strong>Email</strong>: {$row['email']}<br />
-      <strong>Phone Extension</strong>: {$row['phone_ext']}
-      </p>\n";
+      echo "{$row['last_name']}<br />
+      {$row['first_name']}<br />
+      {$row['email']}<br />
+      {$row['phone_ext']}<br />
+      <hr />";
       
     } // End of WHILE loop.
   
   } else { // No employees.
-    echo '<p class="error">There are no employees listed for the given department.</p>';
+    echo 'There are no tasks for that context';
   }
   
   mysql_close($dbc);
 
 } else { // Invalid department ID!
-  echo '<p class="error">Please select a valid department from the drop-down menu in order to view its employees.</p>';
+  echo '<p class="error">Please select a valid context from the drop-down menu in order to view its tasks.</p>';
 }
 
 

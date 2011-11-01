@@ -57,6 +57,8 @@ window.addEvent('domready', function() {
           display: 'block',
           border: '1px dotted green'
         });
+        
+        $('results').set('text', data);
 
       },
       onComplete: function() {

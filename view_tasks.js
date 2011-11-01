@@ -48,7 +48,7 @@ window.addEvent('domready', function() {
         // Get the JSON response data:
         data = responseText;
         
-        $('results').set('text', data);
+        $('results').set('html', data);
        
         $('results').set('styles', {
           display: 'block',
