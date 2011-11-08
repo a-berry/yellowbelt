@@ -17,7 +17,10 @@ if ($did > 0) {
   require_once('mysql.inc.php');
   
   // Query the database:
-  $q = "SELECT * FROM employees WHERE department_id=$did ORDER BY last_name, first_name";
+  $q = "SELECT * 
+        FROM employees 
+        WHERE department_id=$did 
+        ORDER BY last_name, first_name";
   $r = mysql_query($q, $dbc);
   
   // Check that some results were returned:
