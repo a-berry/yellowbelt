@@ -16,14 +16,14 @@ window.addEvent('domready', function() {
 
     e.preventDefault();
 
-    var value = $('did').value;
+    var value = $('tid').value;
 
-    console.log('did value: '+value);
+    console.log('tid value: '+value);
     console.log(typeOf(value));
 
     var req = new Request({
       method: 'get',
-      url: 'remove_task_json.php?did=' + encodeURIComponent(value),
+      url: 'remove_task_json.php?tid=' + encodeURIComponent(value),
       data: value,
       onRequest: function() { 
 

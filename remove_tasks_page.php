@@ -15,7 +15,7 @@
 
 <h4>Remove all tasks by context:</h4>
 <hr />
-<form action="remove_tasks.php" method="get" id="remove_task_form">
+<form action="remove_tasks.php" method="get" id="remove_tasks_form">
 
 this will delete all tasks by category
 <br />
@@ -39,17 +39,12 @@ delete all work items by cat<br />
 <hr />
 <form action="remove_task.php" method="get" id="remove_task_form">
 
-this will delete tasks one at a time
+this will delete task ids one at a time
 <br />
 
+<?php include("list_tasks.php"); ?>
 
-<p><label class="title" id="department_id_label">Context 
-<select id="did" name="did">
-  <option value="1">At Work</option>
-  <option value="2">On the GO</option>
-  <option value="3">Zen</option>
-  <option value="4">Waiting</option>
-</select></label> </p>
+<input type="checkbox" id="tid" name="option2" value="Butter"> Butter<br />
 
 <p><input name="remove" type="submit" value="delete" /></p>
 

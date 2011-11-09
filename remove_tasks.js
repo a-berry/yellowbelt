@@ -10,7 +10,7 @@ window.addEvent('domready', function() {
   }
 
   // REMOVE
-  $('remove_task_form').addEvent('submit', function(e) {
+  $('remove_tasks_form').addEvent('submit', function(e) {
 
     console.log('remove task submitted');
 
