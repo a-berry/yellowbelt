@@ -7,7 +7,7 @@
 $dbc = @mysql_connect ('localhost', 'root', 'root');
 
 // Confirm the connection and select the database:
-if (!$dbc OR !mysql_select_db ('ajax_moo')) {
+if (!$dbc OR !mysql_select_db ('my_sql')) {
   
   // Handle the error, if desired.
   
